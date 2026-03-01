@@ -1,0 +1,27 @@
+{
+    "article": {
+        "prefix": "bA",
+        "body": "\\documentclass[UTF8,fontset=windows,10pt,a4paper]{ctexart}\n\\usepackage[top=1in,bottom=1in,left=1in,right=1in]{geometry}\n\\usepackage{graphicx}\n\\title{$1}\n\\begin{document}\n$0\n\\end{document}",
+        "description": "regular article"
+    },
+    "verbatim": {
+        "prefix": "bV",
+        "body": "\\begin{verbatim}\n$0\n\\end{verbatim}",
+        "description": "verbatim environment"
+    },
+    "frame": {
+        "prefix": "bF",
+        "body": "\\begin{frame}\n\t\\frametitle{${1:<title>}}\n\t${0:${TM_SELECTED_TEXT}}\n\\end{frame}",
+        "description": "frame environment"
+    },
+    "column": {
+        "prefix": "bC",
+        "body": "\\begin{columns}\n\\column{0.5\\textwidth}\n${1}\n\\column{0.5\\textwidth}\n${0}\n\\end{columns}",
+        "description": "two columns environment"
+    },
+    "graphics": {
+        "prefix": "iG",
+        "body": "\\centering\n\\includegraphics[width=.8\\textwidth]{${0}}",
+        "description": "include graphics"
+    }
+}

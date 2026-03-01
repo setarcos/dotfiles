@@ -1,0 +1,4 @@
+--dotfiles
+--ignore .stowrc
+--ignore setup.sh
+--ignore README
