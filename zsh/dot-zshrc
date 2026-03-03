@@ -173,7 +173,7 @@ alias df="df -Th"
 
 # function to make ls look nice is below
 if [ -f /usr/bin/exa ]; then
-    alias ls='exa'
+    alias ls='exa --icons=auto'
 else
     alias ls='ls -rhbtF --color=auto'
     alias ll='ls -rhbtF --color=auto -l'
