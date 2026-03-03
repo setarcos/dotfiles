@@ -206,7 +206,6 @@ bindsym $super+r mode "resize"
 # finds out, if available)
 bar {
     position top
-    output DisplayPort-0
 #    i3bar_command i3bar --transparency
     status_command i3status
     colors {
