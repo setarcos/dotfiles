@@ -3,3 +3,6 @@ opacity = 0.8
 
 [font.normal]
 family = "MesloLGS NF"
+
+[env]
+WINIT_X11_SCALE_FACTOR = "1.1"
