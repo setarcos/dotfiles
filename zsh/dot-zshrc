@@ -97,7 +97,6 @@ HISTSIZE=1000
 SAVEHIST=50000
 # }}}
 # Other ZSH options {{{
-export PATH=/opt/texlive/2025/bin/x86_64-linux/:~/bin:~/.cargo/bin:$PATH
 autoload -U colors
 colors
 
