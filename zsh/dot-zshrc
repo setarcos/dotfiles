@@ -31,7 +31,7 @@ bindkey '\ee' edit-command-line
 # Variables {{{
 export EDITOR=vim
 export VISUAL=$EDITOR
-export PAGER=less
+export PAGER="less -X"
 
 export LESSCHARSET="UTF-8"
 export LESSOPEN='|/usr/bin/lesspipe.sh %s 2>&-'
