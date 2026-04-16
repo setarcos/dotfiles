@@ -93,7 +93,7 @@ SPROMPT='zsh: correct '%R' to '%r' ? ([Y]es/[N]o/[E]dit/[A]bort) '
 # }}}
 # History {{{
 HISTFILE=~/.zsh_history
-HISTSIZE=1000
+HISTSIZE=5000
 SAVEHIST=50000
 # }}}
 # Other ZSH options {{{
@@ -149,9 +149,6 @@ REPORTTIME=5
 
 # allow comments in interactive shells
 setopt interactivecomments
-
-# ignore lines starting with a space
-setopt hist_ignore_space
 
 # disable XON/XOFF flow control (^s/^q)
 stty -ixon
