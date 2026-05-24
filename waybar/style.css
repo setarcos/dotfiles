@@ -1,0 +1,153 @@
+/* Tomorrow Night theme colors */
+@define-color bg #1d1f21;
+@define-color fg #c5c8c6;
+@define-color red #cc6666;
+@define-color orange #de935f;
+@define-color yellow #f0c674;
+@define-color green #b5bd68;
+
+* {
+    border: none;
+    border-radius: 0;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+}
+
+window#waybar {
+    background: transparent;
+    color: @fg;
+    font-family: "JetBrainsMono Nerd Font", "Noto Sans CJK SC", monospace;
+    font-size: 12px;
+}
+
+#waybar > box {
+    background: rgba(29, 31, 33, 0.85);
+    border-radius: 5px;
+    margin: 0px 3px;
+    padding: 4px 0;
+}
+
+.modules-left, .modules-center, .modules-right {
+    background: transparent;
+    padding: 0 4px;
+}
+
+#cpu, #memory, #disk, #network, #pulseaudio, #battery,
+#custom-date, #custom-exit_node,
+#workspaces, #tray, #mode {
+    background: transparent;
+    color: @fg;
+    padding: 0 6px;
+    border-radius: 8px;
+    margin: 0 2px;
+}
+
+#workspaces button {
+    background: transparent;
+    color: @fg;
+    padding: 0 8px;
+    min-width: 20px;
+    border-radius: 8px;
+    margin: 0 2px;
+}
+
+/* Current workspace */
+#workspaces button.focused {
+    background: rgba(197, 200, 198, 0.25);
+    color: @fg;
+}
+
+#workspaces button.urgent {
+    background: @red;
+    color: @bg;
+}
+
+/* Tool tip */
+#workspaces button:hover {
+    background: rgba(197, 200, 198, 0.15);
+    border-radius: 8px;
+}
+
+/* ========== Tray ========== */
+#tray {
+    padding: 0 8px;
+}
+
+#tray > .needs-attention {
+    background: @red;
+    border-radius: 8px;
+    padding: 0 4px;
+}
+
+/* ========== CPU ========== */
+#cpu.info {
+    background: @green;
+    color: @bg;
+    border-radius: 8px;
+}
+#cpu.warning {
+    background: @yellow;
+    color: @bg;
+    border-radius: 8px;
+}
+#cpu.critical {
+    background: @red;
+    color: @bg;
+    border-radius: 8px;
+}
+
+/* ========== Memory ========== */
+#memory.warning {
+    background: @yellow;
+    color: @bg;
+    border-radius: 8px;
+}
+#memory.critical {
+    background: @red;
+    color: @bg;
+    border-radius: 8px;
+}
+
+/* ========== Disk ========== */
+#disk.warning {
+    background: @yellow;
+    color: @bg;
+    border-radius: 8px;
+}
+#disk.critical {
+    background: @red;
+    color: @bg;
+    border-radius: 8px;
+}
+
+/* ========== Audio ========== */
+#pulseaudio.warning {
+    background: @orange;
+    color: @bg;
+    border-radius: 8px;
+}
+
+/* ========== Battery ========== */
+#battery.warning {
+    background: @yellow;
+    color: @bg;
+    border-radius: 8px;
+}
+#battery.critical {
+    background: @red;
+    color: @bg;
+    border-radius: 8px;
+}
+
+#battery.charging {
+    color: @green;
+}
+
+/* ========== Tailscale ========== */
+#custom-exit_node.Good {
+    color: @green;
+}
+#custom-exit_node.Idle {
+    color: @yellow;
+}
