@@ -25,9 +25,13 @@ floating_modifier $super
 # screen before suspend. Use loginctl lock-session to lock your screen.
 # exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec swaybg -i ~/Pictures/wallpaper.jpg -m fill
-exec --no-startup-id xscreensaver -no-splash
 exec --no-startup-id fcitx5
 exec --no-startup-id waybar
+exec swayidle -w \
+    timeout 300 'swaylock -f' \
+    timeout 600 'swaymsg "output * power off"' \
+    resume 'swaymsg "output * power on"' \
+    before-sleep 'swaylock -f'
 
 # print screen
 bindsym --release Print exec grim -g "$(slurp -d)" - | wl-copy -t image/png
