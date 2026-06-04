@@ -35,12 +35,18 @@ window#waybar {
 
 #cpu, #memory, #disk, #network, #pulseaudio, #battery,
 #custom-date, #custom-exit_node,
-#workspaces, #tray, #mode {
+#workspaces, #tray {
     background: transparent;
     color: @fg;
     padding: 0 6px;
     border-radius: 8px;
     margin: 0 2px;
+}
+#mode {
+    background: @yellow;
+    color: @bg;
+    padding: 0 6px;
+    border-radius: 3px;
 }
 
 #workspaces button {
