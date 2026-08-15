@@ -5,9 +5,9 @@ swayimg.viewer.on_key("Shift-Delete", function()
         -- Permanently remove the file from disk
         local success, err = os.remove(image.path)
         if success then
-            swayimg.text.set_status("Deleted: " .. image.path)
+            swayimg.text.status = "Deleted: " .. image.path
         else
-            swayimg.text.set_status("Error: " .. err)
+            swayimg.text.status = "Error: " .. err
         end
     end
 end)
