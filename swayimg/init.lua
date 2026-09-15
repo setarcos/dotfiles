@@ -11,3 +11,13 @@ swayimg.viewer.on_key("Shift-Delete", function()
         end
     end
 end)
+
+-- Quit the application
+local function quit()
+    swayimg.exit()
+end
+
+-- Bind q to quit in every mode (bindings are per mode)
+swayimg.viewer.on_key("q", quit)
+swayimg.gallery.on_key("q", quit)
+swayimg.slideshow.on_key("q", quit)
